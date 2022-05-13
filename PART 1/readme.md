@@ -24,9 +24,6 @@ I recommend installing Anaconda, which comes with all of the necessary packages,
 
 Download the installer from https://www.anaconda.com/download/. Choose the Python 3.6 or higher version, and the appropriate 64/32-bit installer.
 
-Refer to the installation instructions here.
-
-Verify the installation, as mentioned here.
 
 Why this Project?
 In this project, I'll go through the data analysis process and see how everything fits together.
