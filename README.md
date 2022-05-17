@@ -1,5 +1,6 @@
 ## Udacity-ALX-T-NanoDegree
 
+![ALX-T](https://user-images.githubusercontent.com/96830808/168874339-b93b74b0-a52e-425a-9e4d-7f368d30bfdd.PNG)
 
 ## PART 1 
 Introduction to Data Analysis Learn the data analysis process of questioning, wrangling, exploring, analyzing, and communicating data. 
@@ -44,3 +45,7 @@ Learn to apply sound design and data visualization principles to the data analys
 `Project:` Cover Letter Career Service
 
 `Project:` Resume Review Career Service
+
+
+
+
