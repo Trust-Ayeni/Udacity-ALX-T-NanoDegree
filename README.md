@@ -1,6 +1,7 @@
 ## Udacity-ALX-T-NanoDegree
 
-![ALX-T](https://user-images.githubusercontent.com/96830808/168874339-b93b74b0-a52e-425a-9e4d-7f368d30bfdd.PNG)
+![ALX-T (2)](https://user-images.githubusercontent.com/96830808/168875016-eb740483-fd69-493d-ab13-6dd3f4684630.PNG)
+
 
 ## PART 1 
 Introduction to Data Analysis Learn the data analysis process of questioning, wrangling, exploring, analyzing, and communicating data. 
