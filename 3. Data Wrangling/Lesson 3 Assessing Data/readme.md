@@ -11,7 +11,7 @@ You can search for these issues in two ways:
 
 2. Programmatically using code
 
-![Assessing Data](/images/Capture.PNG)
+![Capture](https://user-images.githubusercontent.com/96830808/168873617-91c0efb6-02ae-41f0-9f97-424484a075f5.PNG)
 
 When you detect an issue, document it to make cleaning easier.
 
