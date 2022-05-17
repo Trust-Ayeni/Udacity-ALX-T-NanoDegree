@@ -37,6 +37,9 @@ Learn to apply sound design and data visualization principles to the data analys
 ## PART 7
 Career Services
 `Project:` GitHub Profile Career Service
+
 `Project:` LinkedIn Profile Career Service
+
 `Project:` Cover Letter Career Service
+
 `Project:` Resume Review Career Service
