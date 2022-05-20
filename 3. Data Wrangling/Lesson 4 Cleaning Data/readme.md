@@ -7,6 +7,9 @@ In this lesson, you will work on the third step of the data wrangling process, c
 - Tidiness
 - Clean Data
 
+
+![Capture 1](https://user-images.githubusercontent.com/96830808/169438462-b018e073-92e0-4b70-b4c5-4189f8e06a52.PNG)
+
 While there are ways to clean data manually using spreadsheet programs and text editors, the best way to clean data is to code it yourself. This requires three steps:
 
 >- Define - define how you will clean the issue in words
@@ -274,69 +277,122 @@ For Auralin to pass this Phase II clinical trial it must be deemed safe, and the
 >- These adverse_reactions were actually previously standalone, but we joined this to the treatments table to allow for this analysis. Between the two drugs, Auralin and Novodra, the counts of each adverse reaction are pretty similar. One exception is throat irritation for Auralin, the oral insulin which is expected because this pill is taken orally and passes by the throat before it gets to the stomach. Another is injection site discomfort for Novodra which is the injectable insulin because that's a common known adverse reaction for injectable insulin because of needles. This one of the reasons why we want oral insulin in the first place.
 
 These counts are more clear in these horizontal bar charts.
+![Capture](https://user-images.githubusercontent.com/96830808/169441500-d5bab342-d559-4cd5-88a4-66b54cfc2cdf.PNG)
 
 
+**Adverse Reaction Count Bar Charts for Auralin and Novodra**
 
-Adverse Reaction Count Bar Charts for Auralin and Novodra
-Pre-trial Post-trial Mean Insulin Dose Change.
+
+# Pre-trial Post-trial Mean Insulin Dose Change.
 Dose change is important because if the new oral insulin requires a higher dosage to be effective, the manufacturer might not bring this to market because it wouldn't be financially feasible.
 
 The dosage information was hidden in two columns in the treatments table, auralin and novodra, with start dose and end dose in each column, and the treatment value in each column header. We converted this to a tidy format and separated out the start_dose and end_dose by melting the treatment variable down to its own column. This allowed us to run a mean dose change analysis:
 
-Mean Dosage Change
-treatment	
-Auralin	-8.325714
-Novodra	0.377143Again, the results here are good for Auralin. Patients that were treated with Auralin required on average, 8 more units of insulin to establish a safe, steady blood sugar level compared to Novodra patients who on average required 0.4 units less of insulin. Auralin requiring 8 more units, is expected because we knew that oral insulin has a tougher time getting into the bloodstream through the stomach lining, and eight units more isn't a big a deal.
-Mean Insulin Unit Change for Auralin and Novodra
-HbA1c Change
+# Mean Dosage Change
+|treatment| |
+| --- | --- |
+|Auralin|	-8.325714|
+|Novodra|	0.377143|
+![Capture](https://user-images.githubusercontent.com/96830808/169439000-d7125076-c21d-4cd2-9386-4beece82d572.PNG)
+**Mean Insulin Unit Change for Auralin and Novodra**
+
+Again, the results here are good for Auralin. Patients that were treated with Auralin required on average, 8 more units of insulin to establish a safe, steady blood sugar level compared to Novodra patients who on average required 0.4 units less of insulin. Auralin requiring 8 more units, is expected because we knew that oral insulin has a tougher time getting into the bloodstream through the stomach lining, and eight units more isn't a big a deal.
+
+
+
+
+# HbA1c Change
 HbA1 change is our key indicator for diabetes control. Most patients in this trial start around 7.9 percent so if we can establish that Auralin causes a reduction in HbA1c that's similar to the current injectable insulin standard, that's a success. We can measure that through a confidence interval But first we need to establish the difference in means.
 
-Before Cleaning
+**Before Cleaning**
 Before cleaning, Novodra had a massive advantage in HbA1C reduction, 0.71 compared to 0.35 for Auralin.
 
-treatment	
-Auralin	0.344872
-Novodra	0.714731
-Pre-trial/Post-trial Mean HbA1c Change (Unclean Data)
-After Cleaning
+|treatment| |
+| --- | --- |
+|Auralin|	0.344872|
+|Novodra|	0.714731|
+![Capture](https://user-images.githubusercontent.com/96830808/169439380-52a412c6-6625-4d1f-b2fd-e25f483f8e38.PNG)
+**Pre-trial/Post-trial Mean HbA1c Change (Unclean Data)**
+
+
+**After Cleaning**
 After cleaning, the difference is much smaller
 
+|treatment| |	
+| --- | --- |
+|Auralin|	0.387657|
+|Novodra|	0.40491|
+![Capture](https://user-images.githubusercontent.com/96830808/169440390-79402269-8ead-4194-8abb-59b1ecb97ea7.PNG)
+**Pre-trial/Post-trial Mean HbA1c Change (Clean Data)**
 
-
-treatment	
-Auralin	0.387657
-Novodra	0.40491
-Pre-trial/Post-trial Mean HbA1c Change (Clean Data)
 These results are encouraging but clinical trial results require more rigorous statistical analysis.
 
-Confidence Interval
-The confidence interval refers to the range of values that a parameter is likely to fall in with a specific probability. We want the upper limit of the confidence interval of the differences in means to be less than 0.4, meaning that if the difference in means is less than 0.4, we can be highly confident that our results are meaningful.
+# Confidence Interval
+The **confidence interval** refers to the range of values that a parameter is likely to fall in with a specific probability. We want the upper limit of the confidence interval of the differences in means to be less than 0.4, meaning that if the difference in means is less than 0.4, we can be highly confident that our results are meaningful.
 
 Before cleaning, the upper limit of the confidence interval is 0.43 which means that Auralin would not have passed the Phase II clinical trial. But after cleaning the HbA1C reduction is pretty similar the upper limit of the confidence interval is 0.03.
 
-before_CI_upper_limit	after_CI_upper_limit
-0.43	0.03
-0.03 is significantly lower than 0.4, which means that Auralin oral insulin is similarly effective to Novodra injectable insulin.
+|before_CI_upper_limit|	after_CI_upper_limit|
+| --- | --- |
+|0.43|	0.03|
 
-Good News!
+>- 0.03 is significantly lower than 0.4, which means that Auralin oral insulin is similarly effective to Novodra injectable insulin.
+
+# Good News!
 Our oral insulin, Auralin passed Phase II clinical trials! This is a big deal because the probability of success for Phase II trials is 31%. A successful Phase II trial means we have a good chance of making it past Phase III and the regulatory review process to make it to market. If it does, this oral insulin would be an enormous breakthrough in treating Type I and Type II diabetes patients, as freedom from daily injections would liberate patients, reduce missed doses and therefore reduce irritating and sometimes serious complications from diabetes.
 
-Great job assessing and cleaning this data!
+>- Great job assessing and cleaning this data!
 
-More Reading
+>- More Reading
 Confidence intervals are an important measure o the validity of our results. Learn more about Confidence Intervals:
+- [here](https://www.health.ny.gov/diseases/chronic/confint.htm)
+- [here](https://en.wikipedia.org/wiki/Confidence_interval)
 
 
+## Data Wrangling Can Be Iterative!
 
+You just finished defining, coding, and testing the cleaning operations. After cleaning, we always reassess our data. Then if necessary, gather more data or make additional assessments and address them through another iteration of cleaning.
 
+You might proceed to analysis or visualization at this point. But it's also completely okay to revisit any wrangling step if you realize it's necessary.
 
+>- When is Iteration Necessary?
+The concept of iterating isn't that applicable for clinical trials given the rigor involved in their planning. But, there are other situations that require iteration:
 
+- Your statistical power calculations are wrong, and you need to recruit more patients to make your study statistically significant. You'd also have to revisit gathering in this scenario.
+- You are missing a key piece of patient information, like patient blood type because you discover new research that related insulin resistance to blood type. You'd also have to revisit gathering in this scenario.
+- You spotted another data quality issue. Revisiting assessing to add these assessments to your notes is fine.
+
+## Clean: Summary
+Cleaning is the third step in the data wrangling process:
+
+- Gather
+- Assess
+- Clean
+There are two types of cleaning:
+
+>- Manual (not recommended unless the issues are one-off occurrences)
+>- Programmatic
+
+The programmatic data cleaning process:
+
+- Define: convert our assessments into defined cleaning tasks. These definitions also serve as an instruction list so others (or yourself in the future) can look at your work and reproduce it.
+- Code: convert those definitions to code and run that code.
+- Test: test your dataset, visually or with code, to make sure your cleaning operations worked.
+Always make copies of the original pieces of data before cleaning!
+
+## Lesson Overview
+In this lesson, you:
+
+- Created and coded data cleaning operations to improve quality, by using both functions and regular expressions
+- Tested and implemented these cleaning operations
+- Created a tidy dataset
 
 ## New Terms
 
 | Terms    | Definition |
 | --- | --- |
 |Imputing	| Filling in missing data with other values|
+|Confidence Interval|	A statistical term that refers to the range of values that a parameter will fall in with a specific probability|
 
 
 # More Reading
