@@ -48,5 +48,6 @@ Learn to apply sound design and data visualization principles to the data analys
 `Project:` Resume Review Career Service
 
 
+> View my certificate of completion [here](https://confirm.udacity.com/UW4GGYD4)
 
 
