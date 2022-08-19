@@ -54,4 +54,22 @@ The three lessons in this course aim at the following components of SQL:
 
 At the end of these three lessons, you will be ready to tackle the project. The project aims to assure you have mastered these three topics, but you will also see some of the more advanced queries that were not covered in this course. These are just meant to introduce you to the advanced material, but don't feel discouraged if you didn't get these - they were beyond the scope of the class, and they are not required to pass the project!
 
+# Why SQL
+
+## SQL vs. NoSQL
+You may have heard of NoSQL, which stands for not only SQL. Databases using NoSQL allow for you to write code that interacts with the data a bit differently than what we will do in this course. These NoSQL environments tend to be particularly popular for web based data, but less popular for data that lives in spreadsheets the way we have been analyzing data up to this point. One of the most popular NoSQL languages is called [MongoDB](https://www.mongodb.com). Udacity has a full course on MongoDB that you can take for free here, but these will not be a focus of this program.
+
+NoSQL is not a focus of analyzing data in this Nanodegree program, but you might see it referenced outside this course!
+
+## Why Businesses Like Databases
+
+>- Data integrity is ensured - only the data you want entered is entered, and only certain users are able to enter data into the database.
+
+
+>- Data can be accessed quickly - SQL allows you to obtain results very quickly from the data stored in a database. Code can be optimized to quickly pull results.
+
+>- Data is easily shared - multiple individuals can access data stored in a database, and the data is the same for all users allowing for consistent results for anyone with access to your database.
+
+# How Databases Store Data
+
 
