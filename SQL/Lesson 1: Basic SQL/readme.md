@@ -71,5 +71,61 @@ NoSQL is not a focus of analyzing data in this Nanodegree program, but you might
 >- Data is easily shared - multiple individuals can access data stored in a database, and the data is the same for all users allowing for consistent results for anyone with access to your database.
 
 # How Databases Store Data
+A few key points about data stored in SQL databases:
+
+>- Data in databases is stored in tables that can be thought of just like Excel spreadsheets.
+For the most part, you can think of a database as a bunch of Excel spreadsheets. Each spreadsheet has rows and columns. Where each row holds data on a transaction, a person, a company, etc., while each column holds data pertaining to a particular aspect of one of the rows you care about like a name, location, a unique id, etc.
+
+
+>- All the data in the same column must match in terms of data type.
+An entire column is considered quantitative, discrete, or as some sort of string. This means if you have one row with a string in a particular column, the entire column might change to a text data type. This can be very bad if you want to do math with this column!
+
+
+>- Consistent column types are one of the main reasons working with databases is fast.
+Often databases hold a LOT of data. So, knowing that the columns are all of the same type of data means that obtaining data from a database can still be fast.
+
+
+The key to SQL is understanding statements. A few statements include:
+
+>- CREATE TABLE is a statement that creates a new table in a database.
+>- DROP TABLE is a statement that removes a table in a database.
+>- SELECT allows you to read data and display it. This is called a query.
+The SELECT statement is the common statement used by analysts, and you will be learning all about them throughout this course!
+
+# SELECT $ FROM
+Here you were introduced to the SQL command that will be used in every query you write: SELECT ... FROM ....
+
+- SELECT indicates which column(s) you want to be given the data for.
+
+- FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
+If you want to be provided with the data from all columns in the table, you use "*", like so:
+
+>- SELECT * FROM orders
+Note that using SELECT does not create a new table with these columns in the database, it just provides the data to you as the results, or output, of this command.
+
+You will use this SQL SELECT statement in every query in this course, but you will be learning a few additional statements and operators that can be used along with them to ask more advanced questions of your data.
+
+
+# First SQL Statement
+
+``` 
+SELECT *
+FROM orders;
+```
+Once you have typed in your SQL code, you can click on the blue EVALUATE button to run the query. This may take a moment. An alternative to clicking EVALUATE is to use control + Enter to execute your query. If you get an error, it will sometimes cover the EVALUATE button, so this second option is very nice!
+
+You will notice that your instructor Derek uses "demo" tables, like FROM demo.orders (and he will continue to do this in future lessons), but you should write your queries using the table names exactly as shown in the Schema on the left, with "demo" removed, like FROM orders.
+
+## SELECT and FROM in Every SQL Query
+Every query will have at least a SELECT and FROM statement. The SELECT statement is where you put the columns for which you would like to show the data. The FROM statement is where you put the tables from which you would like to pull data.
+
+
+
+
+
+
+
+
+
 
 
