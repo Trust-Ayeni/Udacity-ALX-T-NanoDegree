@@ -32,7 +32,7 @@ In this project, I'll go through the data analysis process and see how everythin
 
 I'll use the Python libraries NumPy, pandas, and Matplotlib, which make writing data analysis code in Python a lot easier! Not only that, these are sought-after skills by employers!
 
-## What will you'll learn?
+## What will I learned?
 
 After completing the project, you will:
 
