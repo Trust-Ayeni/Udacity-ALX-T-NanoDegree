@@ -11,7 +11,7 @@ Investigate a Dataset
 
 
 ## Project Overview
-In this project, I will analyze a dataset and then communicate your findings about it. I will use the Python libraries NumPy, pandas, and Matplotlib to make your analysis easier.
+In this project, I will analyze a dataset and then communicate my findings about it. I will use the Python libraries NumPy, pandas, and Matplotlib to make my analysis easier.
 
 What do you need to install?
 You will need an installation of Python, plus the following libraries:
@@ -42,19 +42,19 @@ Be comfortable posing questions that can be answered with a given dataset and th
 
 Know how to investigate problems in a dataset and wrangle the data into a format you can use
 
-Have experience communicating the results of your analysis
+Have experience communicating the results of my analysis
 
-Be able to use vectorized operations in NumPy and pandas to speed up your data analysis code
+Be able to use vectorized operations in NumPy and pandas to speed up my data analysis code
 
-Be familiar with pandas' Series and DataFrame objects, which let you access your data more conveniently
+Be familiar with pandas' Series and DataFrame objects, which let you access my data more conveniently
 
-Know how to use Matplotlib to produce plots showing your findings
+Know how to use Matplotlib to produce plots showing my findings
 
 
 # PROJECT DETAILS
 
 ## Introduction
-For the final project, i conducted my own data analysis and create a file to share that documents your findings. You should start by taking a look at your dataset and brainstorming what questions you could answer using it. Then i used pandas and NumPy to answer the questions you are most interested in, and create a report sharing the answers. I will not be required to use inferential statistics or machine learning to complete this project, but i made it clear in my communications that findings are tentative. This project is open-ended in that the reviewers are not looking for one right answer.
+For the final project, i conducted my own data analysis and create a file to share that documents my findings. You should start by taking a look at my dataset and brainstorming what questions you could answer using it. Then i used pandas and NumPy to answer the questions you are most interested in, and create a report sharing the answers. I will not be required to use inferential statistics or machine learning to complete this project, but i made it clear in my communications that findings are tentative. This project is open-ended in that the reviewers are not looking for one right answer.
 
 ### Step One - Choose Your Data Set
 Click this link (available in a Google doc here) to open a document with links and information about data sets that you can investigate for this project. You must choose one of these datasets to complete the project.
